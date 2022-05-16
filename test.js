@@ -47,17 +47,6 @@ test('getStories', async t => {
 
 test('getStoriesFeed', async t => {
   const {tray, status} = await getStoriesFeed(
-    {userid: USERID, sessionid: SESSIONID}
-  )
+    {userid: USERID, sessionid: 
 
-  t.is(status, 'ok')
-  t.true(Array.isArray(tray))
-})
-
-test('getMediaByLocation', async t => {
-  const {location_info: location} = await getMediaByLocation(
-    {id: '292188415', userid: USERID, sessionid: SESSIONID}
-  )
-  t.is(location.location_id, '292188415')
-  t.is(location.name, 'Eiffel Tower')
-})
+   
